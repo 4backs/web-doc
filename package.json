@@ -1,0 +1,37 @@
+{
+  "name": "vanilla-web-doc",
+  "version": "0.0.2",
+  "description": "",
+  "main": "./index.js",
+  "module": "./esm/index.js",
+  "unpkg": "./unpkg/web-doc.min.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node scripts/build.js && tsc",
+    "dev": "node scripts/serve.mjs -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorcd/web-doc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igorcd/web-doc/issues"
+  },
+  "homepage": "https://github.com/igorcd/web-doc#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "esbuild": "^0.13.15",
+    "esbuild-serve": "^1.0.1",
+    "eslint": "^8.3.0",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@4backs/render-function": "^0.0.1",
+    "vanilla-render-function": "0.0.8"
+  }
+}

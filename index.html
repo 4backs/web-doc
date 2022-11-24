@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="dist/index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <br>
+    <h1 id="testando1" style="background: blue">Testando 1</h1>
+    <br>
+    <br>
+    <br>
+    <h1 id="testando2">Testando 2</h1>
+    <script>
+        const { scan, toogleVisibility, dispose } = useWebDoc([
+            {
+                selector: '#testando1',
+                color: 'red',
+                sections: [
+                    {
+                        title: 'Descrição',
+                        description: 'Aqui é aonde fica o título do sistema'
+                    }
+                ],
+                timeline: [
+                    {
+                        commit: "Alteração da chamada da API",
+                        author: "Igor Dantas",
+                        date: new Date()
+                    },
+                    {
+                        commit: "Substituido a classe",
+                        author: "Igor Dantas",
+                        date: new Date(2020, 1, 2)
+                    }
+                ]
+            },
+        ]);
+
+        scan();
+    </script>
+</body>
+
+</html>
